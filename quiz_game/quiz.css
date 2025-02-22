@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font:  Roboto, sans-serif;
+}
+body {
+    display: flex; /* Make the body a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make the body at least as tall as the viewport */
+    background: linear-gradient(342deg, rgba(2,0,36,1) 0%, rgba(116,74,239,1) 43%, rgba(241,171,254,1) 100%);
+}
+.quiz-card {
+    border: 1px solid black;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    background-color: white;        
+}
+.quiz-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.quiz-card-header h1 {
+    font-size: 32px;
+    color: #333333;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+    padding-bottom  : 16px;
+}
+.quiz-card-header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.quiz-card-header div span {
+    padding: 8px;
+    color: #333333;
+    border: 1px solid #333333;
+    border-radius: 16px;
+}
+.quiz-card form {
+    display: flex;
+    flex-direction: column;
+}
+.quiz-card form p {
+    margin-bottom: 24px;
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+}
+.quiz-card form div {
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: #ededed;
+    padding: 10px;
+}
+.quiz-card form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.quiz-card form label {
+    color: #333333;
+}
+.quiz-card button {
+    background-color: #5e5ec6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    background-color: white;
+}
+.result-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.result-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.result-card button {
+    background-color: #5e5ec6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hidden {
+    display: none;
+}
