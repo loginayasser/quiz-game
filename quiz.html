@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+        <div class="quiz-card">
+            <div class="quiz-card-header">
+                <h1>Quiz Game</h1>
+                <div>
+                    <span id="score">Score : 0</span>
+                    <span id="timer">Time Left : 00:00</span>
+                </div>
+            </div>
+            <form action="">
+                <p id="question"></p>
+                <div>
+                    <input type="radio" id="A" name="answer">
+                    <label for="A"></label>
+                </div>
+                <div>
+                    <input type="radio" id="B" name="answer">
+                    <label for="B"></label>
+                </div>
+                <div>
+                    <input type="radio" id="C" name="answer">
+                    <label for="C"></label>
+                </div>
+                <div>
+                    <input type="radio" id="D" name="answer">
+                    <label for="D"></label>
+                </div>
+            </form>
+            <button id="next">next</button>
+        </div>
+        <div class="result-card hidden">
+            <p id="result"></p>
+            <button id="restart">restart</button>
+        </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
